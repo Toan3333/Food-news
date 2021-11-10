@@ -1,0 +1,253 @@
+.food-deli {
+  background: url(../img/bg-fooddeli.png) no-repeat;
+  padding-top: 3.2rem;
+  padding-bottom: 4rem;
+  background-size: cover;
+  background-color: #fff3be;
+
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.8rem;
+  }
+
+  &-title {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.7rem;
+    font-family: $font-Roboto;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: $red;
+      height: 0.8rem;
+      width: 100%;
+      bottom: 0;
+    }
+  }
+
+  &-eye {
+    display: flex;
+    align-items: center;
+  }
+
+  &-eye-img {
+    width: 2.4rem;
+    height: 2.4rem;
+    display: inline-flex;
+    margin-right: 0.8rem;
+
+    span {
+      color: $text-grey;
+      font-size: 1.4rem;
+      font-weight: 600;
+      line-height: 2.2rem;
+    }
+  }
+
+  &-cat-main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.6rem;
+  }
+
+  &-cat {
+    display: flex;
+    align-items: center;
+    background-color: $white;
+    border: 0.1rem solid $grey-40;
+    border-radius: 0.8rem;
+    box-shadow: 0px 0px 2.4rem rgba(56, 63, 71, 0.05);
+    padding: 1.6rem 2rem 1.6rem 1.6rem;
+    color: $text-grey;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $green-light;
+      transition: 0.2s linear;
+      color: $green;
+      box-shadow: 0rem 0rem 3.5rem 0rem #05a85f36;
+    }
+  }
+
+  &-cat-img {
+    width: 3.2rem;
+    height: 3.2rem;
+    display: block;
+    margin-right: 1.6rem;
+  }
+
+  &-cat-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: default;
+    line-height: 2.4rem;
+    font-style: normal;
+    cursor: pointer;
+  }
+
+  &-box-main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.6rem;
+    margin-top: 4rem;
+  }
+
+  &-box {
+    position: relative;
+    background-color: $white;
+    padding: 1.6rem;
+    border-radius: 0.8rem;
+    box-shadow: 0px 0px 4.8rem rgba(56, 63, 71, 0.1);
+
+    img {
+      width: 100%;
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  &-price {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &-price-new {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: $text-grey;
+    font-weight: bold;
+    font-style: normal;
+    margin-right: 0.4rem;
+  }
+
+  &-price-old {
+    color: $grey-70;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+    text-decoration: line-through;
+    font-style: normal;
+  }
+
+  &-desc {
+    color: $grey-80;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  &-combo {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    color: $red;
+  }
+
+  .sale-btn {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    img {
+      width: 3.9rem;
+      height: 2rem;
+      display: block;
+    }
+  }
+
+  .cart-btn {
+    position: absolute;
+    bottom: 12rem;
+    right: 1.2rem;
+    a {
+      width: 3.2rem;
+      height: 3.2rem;
+      display: inline-flex;
+      color: $grey-80;
+      font-size: 1.6rem;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      box-shadow: 0px 0px 0.8rem rgba(0, 0, 0, 0.1);
+      border-radius: 100%;
+      &:hover {
+        background-color: $green;
+        color: $white;
+        transition: 0.3s linear;
+      }
+    }
+  }
+
+  .cart-img {
+    width: 1.9rem;
+    height: 1.9rem;
+    margin-bottom: 0;
+  }
+
+  &-view {
+    text-align: center;
+    margin: 4rem;
+
+    span {
+      color: $text-grey;
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 2.4rem;
+      display: inline-flex;
+      align-items: center;
+
+      i {
+        margin-left: 0.4rem;
+        color: $red;
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    &-box-main {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    padding-bottom: 3rem;
+    &-cat-main {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &-box-main {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.4rem;
+    }
+
+    &-title {
+      font-size: 1.7rem;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    padding-bottom: 2.8rem;
+    &-cat-main {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &-cat-title {
+      font-size: 1.3rem;
+      line-height: 2rem;
+    }
+
+    &-box-main {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.4rem;
+    }
+
+    &-price-new {
+      font-size: 1.5rem;
+      line-height: 2.3rem;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  width: 1150px;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 15px;
+}
+
+.full-width {
+  width: 100%;
+  overflow: hidden;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-container-center {
+  margin-right: -3.2rem;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-24 {
+  margin-bottom: 2.4rem;
+}
+
+.mt-16 {
+  margin-top: 1.6rem;
+}
+
+.mt-40 {
+  margin-top: 4rem;
+}

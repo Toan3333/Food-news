@@ -1,0 +1,280 @@
+.home-kitchen {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  &-main {
+    display: flex;
+    align-items: center;
+  }
+
+  &-box-1 {
+    flex-direction: column;
+  }
+
+  &-full {
+    margin-bottom: 4rem;
+  }
+
+  .image-height {
+    height: 33.6rem;
+  }
+
+  &-list {
+    display: inline-block;
+    margin-right: 2.4rem;
+  }
+
+  &-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding-right: 4rem;
+  }
+
+  &-nav {
+    margin-left: 4rem;
+  }
+
+  &-link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    color: $text-grey;
+
+    &:hover {
+      color: $red;
+      transition: 0.2s linear;
+    }
+  }
+  .active {
+    color: $red;
+  }
+
+  &-columns {
+    width: calc(47% - 3.2rem);
+    margin-right: 3.2rem;
+  }
+
+  &-box {
+    margin-bottom: 4rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-title {
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    color: $text-grey;
+    margin-top: 2.4rem;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+    &:hover {
+      color: $red;
+      transition: 0.2s linear;
+    }
+  }
+
+  &-desc {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: $grey-80;
+  }
+
+  &-columns-2 {
+    width: calc(25% - 3.2rem);
+    margin-right: 3.2rem;
+  }
+
+  &__box {
+    padding-bottom: 2.4rem;
+    border-bottom: 0.1rem solid $grey-40;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-title-small {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: $secondary-100;
+    margin-top: 0.8rem;
+    padding-right: 1rem;
+  }
+
+  &-columns-3 {
+    width: 100%;
+    margin-top: 1.6rem;
+  }
+
+  &-group {
+    position: relative;
+    border-radius: 0.8rem;
+    box-shadow: 0px 0px 2.4rem rgba(56, 63, 71, 0.05);
+    border-radius: 0.8rem;
+    border: 0.1rem solid $grey-40;
+    padding: 1.6rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .tag-img {
+    width: 4.8rem;
+    height: 2.4rem;
+    margin-bottom: 0.8rem;
+    display: block;
+  }
+
+  .imgage-kitchen {
+    width: 100%;
+    margin-bottom: 1.6rem;
+  }
+
+  &-price {
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: $text-grey;
+    line-height: 2.4rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .eat-text {
+    color: $grey-80;
+    margin-bottom: 0.8rem;
+  }
+
+  &-store {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    color: $orange;
+  }
+
+  &-cart-btn {
+    position: absolute;
+    top: 15.8rem;
+    right: 1.7rem;
+    a {
+      width: 4rem;
+      height: 4rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      box-shadow: 0px 0px 0.8rem rgba(0, 0, 0, 0.1);
+      border-radius: 100%;
+      font-size: 1.6rem;
+      color: $grey-80;
+
+      &:hover {
+        color: $white;
+        background-color: $green;
+        transition: 0.2s linear;
+      }
+    }
+  }
+
+  .cart-btn {
+    position: absolute;
+    top: 15.8rem;
+    right: 1.7rem;
+    a {
+      width: 4rem;
+      height: 4rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      box-shadow: 0px 0px 0.8rem rgba(0, 0, 0, 0.1);
+      border-radius: 100%;
+      font-size: 1.6rem;
+      color: $grey-80;
+
+      &:hover {
+        color: $white;
+        background-color: $green;
+        transition: 0.2s linear;
+      }
+    }
+
+    .eat-text {
+      font-size: 1.4rem;
+      line-height: 2.2rem;
+      font-weight: 600;
+      color: $grey-80;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    &-flex {
+      padding-right: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    .cart-btn {
+      position: absolute;
+      top: 10.7rem;
+      right: 1.7rem;
+      a {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+
+    &-title {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+
+    &-title-small {
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
+
+    .eat-text {
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
+
+    .image-height {
+      height: 20.6rem;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-top: 2rem;
+
+    .image-height {
+      height: 30.6rem;
+    }
+
+    .cart-btn {
+      top: 19.6rem;
+    }
+
+    .imgage-kitchen {
+      height: 17.8rem;
+    }
+
+    &-main {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &-nav {
+      margin-left: 0;
+      margin-top: 1.6rem;
+    }
+
+    &-list {
+      margin-right: 2.2rem;
+    }
+  }
+}

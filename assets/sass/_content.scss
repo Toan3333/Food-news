@@ -1,0 +1,216 @@
+.content {
+  padding-bottom: 4.3rem;
+  &-columns-1 {
+    width: calc(25% - 3.2rem);
+    margin-right: 3.2rem;
+    height: 100%;
+  }
+
+  &-block {
+    height: 25rem;
+    display: block;
+  }
+
+  &-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.4rem 0.4rem 0 0;
+  }
+
+  &-box__menu {
+    padding: 1.6rem;
+    background-color: $white;
+    border: 0.1rem solid $grey-40;
+    border-radius: 0.4rem;
+    box-shadow: 0px 0px 2.4rem rgba(56, 63, 71, 0.05);
+  }
+
+  &-title {
+    margin-bottom: 1.6rem;
+    a {
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 2.4rem;
+      color: $text-grey;
+      font-style: normal;
+
+      &:hover {
+        color: $red;
+        transition: 0.2s linear;
+      }
+    }
+  }
+
+  &-main {
+    display: flex;
+    padding-top: 1.2rem;
+    padding-bottom: 2.4rem;
+    border-top: 0.1rem solid $grey-40;
+  }
+
+  &-recipe {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    color: $secondary-100;
+    margin-right: 0.8rem;
+
+    &:hover {
+      color: $red;
+      transition: 0.2s linear;
+      cursor: pointer;
+    }
+  }
+
+  &-columns-2 {
+    width: calc(45% - 3.2rem);
+    margin-right: 3.2rem;
+
+    .img-block {
+      height: 25rem;
+      width: 100%;
+      display: block;
+    }
+  }
+  &-food-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &-box-food {
+    padding: 1.6rem;
+    border: 0.1rem solid $grey-40;
+    border-radius: 0.4rem;
+    box-shadow: 0px 0px 2.4rem rgba(56, 63, 71, 0.05);
+
+    &-title {
+      font-size: 2rem;
+      line-height: 2.8rem;
+
+      font-weight: bold;
+
+      a {
+        color: $text-grey;
+
+        &:hover {
+          color: $red;
+          transition: 0.2s linear;
+        }
+      }
+    }
+  }
+
+  &__box {
+    margin-bottom: 3rem;
+  }
+
+  &-columns-3 {
+    width: calc(30% - 3.2rem);
+  }
+
+  &__block {
+    width: 100%;
+    height: 25rem;
+    display: block;
+    margin-bottom: 2.4rem;
+  }
+
+  .food-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &-bottom-box {
+    padding: 1.6rem;
+    border: 0.1rem solid $grey-40;
+    border-radius: 0.4rem;
+    box-shadow: 0px 0px 2.4rem rgba(56, 63, 71, 0.05);
+    background-color: $white;
+  }
+
+  &-bottom-title {
+    font-size: 3.2rem;
+    line-height: 3.7rem;
+    font-family: $font-Roboto;
+    font-weight: bold;
+    margin-bottom: 1.6rem;
+
+    a {
+      color: $text-grey;
+    }
+  }
+
+  &-border {
+    border: none;
+  }
+
+  &-dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      width: 0.73rem;
+      height: 0.73rem;
+      border-radius: 100%;
+      border: 0.2rem solid $grey-80;
+      margin-right: 0.2rem;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    &-columns-1 {
+      width: calc(35% - 3.2rem);
+    }
+
+    &-columns-2 {
+      width: calc(65% - 3.2rem);
+      margin-right: 0;
+    }
+
+    &-columns-3 {
+      width: 31%;
+      margin-right: 0;
+      margin-top: 3rem;
+    }
+
+    &-box-food {
+      &-title {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  &-food-img {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 3.5rem;
+    &-columns-1 {
+      width: 100%;
+    }
+
+    &-columns-2 {
+      width: calc(100% - 3.2rem);
+      margin-top: 3rem;
+    }
+
+    &-columns-3 {
+      display: none;
+    }
+
+    @media screen and (max-width: 374px) {
+      &-box-food {
+        &-title {
+          line-height: 2.6rem;
+
+          a {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+}

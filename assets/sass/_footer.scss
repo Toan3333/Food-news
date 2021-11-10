@@ -1,0 +1,150 @@
+.footer {
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  background-color: $bg-footer;
+
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.6rem;
+    border-bottom: 0.1rem solid $grey-40;
+    margin-bottom: 2.4rem;
+  }
+
+  &-list {
+    display: inline-block;
+
+    margin-right: 0.8rem;
+  }
+
+  &-link {
+    padding-right: 0.8rem;
+    border-right: 0.1rem solid $grey-60;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: $secondary-100;
+    font-family: $font__Roboto;
+
+    &:hover {
+      color: $red;
+      transition: 0.2s linear;
+    }
+  }
+
+  &-nav-list {
+    display: inline-block;
+    margin-right: 0.8rem;
+  }
+
+  &-nav-link {
+    padding-right: 0.8rem;
+    border-right: 0.1rem solid $grey-60;
+    font-size: 1.2rem;
+    line-height: 0.4rem;
+    color: $secondary-100;
+    font-family: $font__Roboto;
+
+    &:hover {
+      color: $red;
+      transition: 0.2s linear;
+    }
+
+    i {
+      margin-right: 0.4rem;
+      font-size: 1.4rem;
+    }
+  }
+
+  &-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-logo {
+    display: flex;
+
+    img {
+      margin-right: 4rem;
+    }
+  }
+
+  &-desc {
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+    font-family: $font__Roboto;
+    color: $secondary-100;
+  }
+
+  &-title {
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 2.4rem;
+    color: $secondary-100;
+    margin-bottom: 0.8rem;
+  }
+
+  &-social {
+    a {
+      margin-right: 2.4rem;
+      font-size: 1.8rem;
+      color: $secondary-100;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    &-logo {
+      img {
+        margin-right: 2rem;
+      }
+    }
+
+    &-main {
+      flex-direction: column;
+    }
+
+    &-nav-left {
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &-main {
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    &-nav-list {
+      margin-bottom: 0.8rem;
+    }
+
+    &-logo {
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 1.6rem;
+
+      img {
+        margin-right: 0;
+        margin-bottom: 0.8rem;
+      }
+    }
+
+    &-flex {
+      flex-direction: column;
+    }
+
+    &-social {
+      text-align: center;
+    }
+
+    &-desc {
+      font-size: 1.3rem;
+    }
+  }
+}

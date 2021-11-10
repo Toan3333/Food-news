@@ -1,0 +1,138 @@
+.review {
+  padding-top: 4rem;
+
+  &-pb {
+    padding-top: 0;
+    padding-bottom: 6rem;
+  }
+
+  &-box {
+    width: calc(25% - 3.2rem);
+    margin-right: 3.2rem;
+
+    img {
+      width: 100%;
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  &-title {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    color: $text-grey;
+    font-family: $font-Roboto;
+    position: relative;
+    z-index: 9999999999;
+    margin-bottom: 2.4rem;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 60%;
+      background-color: $red;
+      height: 0.5rem;
+      bottom: 0;
+      z-index: -1000000;
+    }
+  }
+
+  &-nth-1 {
+    &::before {
+      width: 45%;
+    }
+  }
+
+  &-nth-2 {
+    &::before {
+      width: 39%;
+    }
+  }
+
+  &-nth-3 {
+    &::before {
+      width: 39%;
+    }
+  }
+
+  &-text-title {
+    margin-bottom: 0.8rem;
+    a {
+      font-size: 1.6rem;
+      color: $secondary-100;
+      font-weight: 600;
+      line-height: 2.4rem;
+
+      &:hover {
+        color: $red;
+        transition: 0.2s linear;
+      }
+    }
+  }
+
+  &-desc {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+    color: $grey-80;
+    margin-bottom: 0.4rem;
+  }
+
+  &-date {
+    float: none;
+    margin-bottom: 0.8rem;
+    border-bottom: 0.1rem solid $grey-40;
+  }
+
+  &-theme-text {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    color: $text-grey;
+    border-bottom: 0.1rem solid $grey-40;
+  }
+
+  @media screen and (max-width: 1023px) {
+    &-box {
+      width: calc(50% - 3.2rem);
+      margin-bottom: 3rem;
+    }
+
+    &-title {
+      &::before {
+        width: 45%;
+      }
+    }
+
+    &-nth-1 {
+      &::before {
+        width: 35%;
+      }
+    }
+
+    &-nth-2 {
+      &::before {
+        width: 28%;
+      }
+    }
+
+    &-nth-3 {
+      &::before {
+        width: 30%;
+      }
+    }
+  }
+
+  &-desc {
+    font-size: 1.3rem;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-top: 1rem;
+    &-box {
+      width: 100%;
+      margin-bottom: 2.4rem;
+    }
+  }
+}

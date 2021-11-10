@@ -1,0 +1,87 @@
+.feature {
+  &-before {
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: #d1193f;
+      height: 0.8rem;
+      width: 22%;
+      bottom: 0;
+    }
+  }
+
+  &-main {
+    margin-top: 2.4rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2.4rem;
+  }
+
+  &-title {
+    position: relative;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    color: $text-grey;
+    padding-bottom: 0.4rem;
+    border-bottom: 0.1rem solid $red;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 0.6rem;
+      height: 0.6rem;
+      background-color: $red;
+      left: -0.9rem;
+      bottom: 1rem;
+    }
+  }
+
+  &-desc {
+    margin-top: 0.8rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: $text-grey;
+    line-height: 2.2rem;
+    padding-bottom: 3.2rem;
+  }
+
+  &-blog {
+    padding-top: 0;
+  }
+
+  @media screen and (max-width: 1023px) {
+    &-main {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &-title {
+      font-size: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &-main {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1.6rem;
+    }
+
+    &-box {
+      text-align: center;
+    }
+
+    &-desc {
+      padding-bottom: 2rem;
+    }
+
+    &-title {
+      font-size: 1.8rem;
+    }
+
+    &-before {
+      &::before {
+        width: 40%;
+      }
+    }
+  }
+}

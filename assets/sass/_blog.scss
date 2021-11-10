@@ -1,0 +1,275 @@
+.blog {
+  padding-top: 4rem;
+
+  &-border {
+    padding-bottom: 4rem;
+    border-bottom: 0.1rem solid $grey-40;
+  }
+
+  &-left {
+    width: calc(70% - 3.2rem);
+    margin-right: 3.2rem;
+  }
+
+  &-deli-title {
+    &::before {
+      width: 22%;
+    }
+  }
+
+  &-main {
+    display: flex;
+    margin-top: 1.6rem;
+    padding-top: 1.6rem;
+    border-top: 0.1rem solid $grey-40;
+  }
+
+  &-img {
+    margin-right: 1.6rem;
+  }
+
+  &-content-title {
+    margin-bottom: 0.4rem;
+    a {
+      font-size: 2.4rem;
+      line-height: 3.2rem;
+      font-weight: 600;
+      color: $text-grey;
+
+      &:hover {
+        color: $red;
+        transition: 0.2s linear;
+      }
+    }
+  }
+
+  &-desc {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 2.2rem;
+    color: $grey-80;
+    margin-bottom: 1.2rem;
+  }
+
+  &-user {
+    display: flex;
+    align-items: center;
+  }
+
+  &-circle {
+    width: 2.4rem;
+    height: 2.4rem;
+    background-color: $grey-80;
+    border-radius: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    margin-right: 0.8rem;
+  }
+
+  &-name {
+    color: $text-grey;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-right: 0.8rem;
+    line-height: 2.2rem;
+  }
+
+  &-monitor {
+    padding: 0.4rem 0.8rem;
+    background-color: $red-light;
+    color: red;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 400;
+    border-radius: 0.4rem;
+    margin-right: 2.4rem;
+  }
+
+  &-share {
+    font-size: 1.6rem;
+    color: $grey-70;
+  }
+
+  &-date {
+    float: right;
+
+    span {
+      font-size: 1.2rem;
+      color: $grey-70;
+      font-weight: 600;
+      line-height: 1.8rem;
+    }
+  }
+
+  &-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-right {
+    width: calc(30% - 3.2rem);
+    margin-left: 3.2rem;
+  }
+
+  &-right-title {
+    &::before {
+      width: 52%;
+    }
+  }
+
+  &-right-box {
+    margin-top: 2.4rem;
+  }
+
+  &-theme-img {
+    margin-bottom: 1.6rem;
+    width: 100%;
+  }
+
+  &-text {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: $secondary-100;
+    margin-bottom: 0.8rem;
+    margin-right: 1.2rem;
+  }
+
+  &-text-share {
+    font-size: 1.4rem;
+    color: $grey-70;
+    font-weight: 400;
+    line-height: 2.2rem;
+
+    i {
+      margin-right: 0.4rem;
+    }
+  }
+
+  &-instructions {
+    display: flex;
+  }
+
+  &-text-main {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.6rem;
+    border-bottom: 0.1rem solid $grey-40;
+  }
+
+  &-instructions-1 {
+    font-size: 4.8rem;
+    font-weight: 600;
+    line-height: 5.6rem;
+    color: $secondary-20;
+  }
+
+  &-group {
+    padding-top: 1.6rem;
+    display: flex;
+    align-items: center;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 6rem;
+      height: 4rem;
+      background-color: $grey-40;
+      border-radius: 100%;
+      font-size: 1.8rem;
+      color: $secondary-100;
+      font-weight: 600;
+      line-height: 2.6rem;
+    }
+  }
+
+  &-group-main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.3rem;
+  }
+
+  &-group-title {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    color: $text-grey;
+    margin-bottom: 0.8rem;
+  }
+
+  &-ads {
+    img {
+      margin-top: 2.4rem;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    &-left {
+      width: 100%;
+    }
+
+    &-right {
+      width: 100%;
+      margin-top: 3rem;
+    }
+    &-right-title {
+      &::before {
+        width: 20%;
+      }
+    }
+
+    &-content-title {
+      a {
+        font-size: 2.2rem;
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    padding-top: 3rem;
+    &-left {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    &-main {
+      flex-direction: column;
+    }
+
+    &-img {
+      margin-right: 0;
+      width: 100%;
+      margin-bottom: 1.2rem;
+    }
+
+    &-content-title {
+      a {
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+      }
+    }
+
+    &-desc {
+      font-size: 1.3rem;
+    }
+
+    &-right {
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    &-theme-img {
+      width: 100%;
+    }
+
+    &-ads {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
